@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>coursify</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<body>
+  <div>
+
+    
+  </div>
+  <!-- this is preloader  -->
+  <div id="preloader"></div>
+  <!-- navigation bar using bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="cou.png" height="120px" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- create dropdown in nav bar -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Development</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#web">Front-end Development</a></li>
+                  <li><a class="dropdown-item" href="#moblie">Mobile Development</a></li>
+                  <li><a class="dropdown-item" href="#soft">Back-end Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">AI/ML</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#ai">Artifical intelligence</a></li>
+                  <li><a class="dropdown-item" href="#ml">Machine learning with python</a></li>
+                  <li><a class="dropdown-item" href="#ds">Data science using R</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="cscore">cs core</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#dbms">database management System</a></li>
+                  <li><a class="dropdown-item" href="#os">Operating System</a></li>
+                  <li><a class="dropdown-item" href="#csa">computer System architecture</a></li>
+                  
+                </ul>
+              </li>
+           </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Dashboard</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="d-flex justify-content-end">
+        <a class="btn btn-outline-primary me-2" id="login-btn" href="login.html">Log In</a>
+
+      </div>
+
+
+
+
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Learn new skills online</h1>
+      <p class="lead">Join millions of students learning from the best instructors.</p>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for courses" aria-label="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Categories Section -->
+  <hr>
+  <div class="container">
+    <h2>Popular Categories</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/sparkle-box/2018/03/22170840/benefits-of-a-business-analytics-course-and-degree-image.jpg"
+            alt="Business">
+          <div class="card-body">
+            <h5 class="card-title">Business</h5>
+            <p class="card-text">Learn trending business skill</p>
+            <a href="https://www.startupindia.gov.in/content/sih/en/reources/online-courses.html"
+              class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--eER6Ks-M--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3gjbeg830gnu43sxz7et.png"
+            alt="Development">
+          <div class="card-body">
+            <h5 class="card-title">Development</h5>
+            <p class="card-text">want to be a developer? Explore this..</p>
+            <a href="https://alison.com/tag/software-development" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/09/23164635/Software-Courses.jpg"
+            alt="IT">
+          <div class="card-body">
+            <h5 class="card-title">computer science</h5>
+            <p class="card-text">learn computer science skills</p>
+            <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"
+              class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://www.simplilearn.com/ice9/free_resources_article_thumb/history_and_evolution_of_digital_marketing.jpg"
+            alt="Photography">
+          <div class="card-body">
+            <h5 class="card-title">digital marketing</h5>
+            <p class="card-text">Learn digital-marketing skill</p>
+            <a href="https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing"
+              class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/60/80cb19a88f41eebfe1daae897406d1/levelup.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=600&h=216&fit=fill&q=50"
+            alt="Marketing">
+          <div class="card-body">
+            <h5 class="card-title">Game development</h5>
+            <p class="card-text">learn basic Game DEV </p>
+            <a href="https://pll.harvard.edu/course/cs50s-introduction-game-development?delta=0" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://visme.co/blog/wp-content/uploads/2021/10/what-is-graphic-design-header-1200.png" alt="Design">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">learn designing</p>
+            <a href="https://www.coursera.org/specializations/graphic-design" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <h2
+    style="border:2px groove black;border-radius:15px;text-align: center;  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform: uppercase; ">
+    Courses </h2>
+  <br> <br>
+  <div class="container" id="courses">
+    <div id="web">
+      <h3 class="web"> front-end Development</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">html/css/javascript</h5>
+              <p class="card-text">learn html/css/javascript in one video</p>
+              <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-qfEOE4vtxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
+            <div class="card-body">
+              <h5 class="card-title">css framework</h5>
+              <p class="card-text">learn bootstrap css framework</p>
+              <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/bMknfKXIFA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">javascript framework</h5>
+              <p class="card-text">learn react js framework in one video</p>
+              <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr> <br>
+      <div id="moblie">
+        <h3 class="dev"> Mobile Development</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EExSSotojVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kotlin</h5>
+                <p class="card-text">learn kotlin in one video</p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <div class=" ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0-S5a0eXPoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">react native</h5>
+                <p class="card-text">react native for native apps developement </p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class=" ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fis26HvvDII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">andriod studio</h5>
+                <p class="card-text"></p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr> <br>
+        <div id="soft">
+          <h3 class="dev"> Backend Development</h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Oe421EPjeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Node js</h5>
+                  <p class="card-text">Learn Node js and express</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7S_tz1z_5bA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Databases</h5>
+                  <p class="card-text">Learn mysql in one video</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RGOj5yH7evk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">version control & hosting</h5>
+                  <p class="card-text">Learn git/git hub in one video</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <br> <hr>
+      <div id="cscore">
+        <h3 class="cscore" > Cs core </h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card" id="dbms">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRi_CUQ-FXxgzKQ1dwr_ZJWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">database management System</h5>
+                <p class="card-text">learn DBMS</p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-sm-4">
+            <div class="card" id="os">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+              <div class="card-body">
+                <h5 class="card-title">Operating System</h5>
+                <p class="card-text">learn Operating System</p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" id="csa">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRgLLlzdgiTUKULKJPYc0A4q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+              </div>
+              <div class="card-body" id="csa">
+                <h5 class="card-title">Computer system architecture</h5>
+                <p class="card-text">Learn CSA in one video</p>
+                <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr> <br>
+        <div id="AIML">
+          <h3 class="ai"> AI/ML </h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xxpc-HPKN28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" id="ai">statistics</h5>
+                  <p class="card-text">learn statistics for Ai/Ml</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NWONeJKn6kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>
+                <div class="card-body" id="ml">
+                  <h5 class="card-title">Machine learning using python</h5>
+                  <p class="card-text">learn machine larning using python language</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ckdHNu4kfL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  
+                </div>
+                <div class="card-body" id="ds">
+                  <h5 class="card-title">Data science using R</h5>
+                  <p class="card-text">learn Data science using R language</p>
+                  <!-- <a href="#" class="btn btn-primary">Explore</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          
+      <script>
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none"
+        })
+
+
+        // Step 3: Search Bar
+        const searchBar = document.getElementById('search-bar');
+        const searchBtn = document.getElementById('search-btn');
+
+        searchBtn.addEventListener('click', () => {
+          const searchQuery = searchBar.value.trim();
+          if (searchQuery !== '') {
+            window.location.href = `https://www.udemy.com/courses/search/?q=${searchQuery}`;
+          }
+        });
+
+        // Step 4: Jumbotron Carousel
+        const jumbotron = document.querySelector('.jumbotron');
+        const carouselItems = jumbotron.querySelectorAll('.carousel-item');
+        const carouselPrev = jumbotron.querySelector('.carousel-control-prev');
+        const carouselNext = jumbotron.querySelector('.carousel-control-next');
+        let currentSlide = 0;
+
+        carouselPrev.addEventListener('click', () => {
+          currentSlide--;
+          if (currentSlide < 0) {
+            currentSlide = carouselItems.length - 1;
+          }
+          updateCarousel();
+        });
+
+        carouselNext.addEventListener('click', () => {
+          currentSlide++;
+          if (currentSlide >= carouselItems.length) {
+            currentSlide = 0;
+          }
+          updateCarousel();
+        });
+
+        function updateCarousel() {
+          carouselItems.forEach((item, index) => {
+            if (index === currentSlide) {
+              item.classList.add('active');
+            } else {
+              item.classList.remove('active');
+            }
+          });
+        }
+
+        // Step 5: Categories Section
+        const categoryCards = document.querySelectorAll('.card');
+
+        categoryCards.forEach((card) => {
+          card.addEventListener('click', () => {
+            const categoryTitle = card.querySelector('.card-title').textContent;
+            window.location.href = `https://www.udemy.com/courses/${categoryTitle}/`;
+          });
+        });
+
+
+      </script>
+      <footer class="bg-dark text-white pt-5 pb-4" class="container-fluid">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About Us</h5>
+                    <p>
+                        Coursify is a leading online learning platform that offers free courses on various topics created by experts. Our mission is to help people make a career for their future without any cost.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Tools We Use</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">HTML5</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">CSS3</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">JavaScript</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Bootstrap5</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">UIVERSE IO</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Your Account</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Become an Affiliate</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Shipping Rates</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Help</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+                    <p><i class="fas fa-home mr-3"></i>Surat, Gujarat, India</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:meet.gupta.imscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">meet.gupta.imscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:parshva.shah.bscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">parshva.shah.bscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:karan.gandhi.bscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">karan.gandhi.bscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>Phone: 
+                        <a href="tel:+917096830000" class="text-white" style="text-decoration: none;">7096830000/7486949488/9265263496</a>
+                    </p>
+                </div>
+            </div>
+        
+            <hr class="mb-4">
+        
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright &copy; 2023 All rights reserved
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">Coursify</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </footer>
+            <style>
+                footer{
+                    background-color: #191919;
+                    color: #fff;
+                }
+                footer a{
+                    color: #fff;
+                }
+                footer a:hover{
+                    color: #FFC107;
+                }
+                footer hr{
+                    background-color: #ccc;
+                }
+                footer ul li a:hover{
+                    color: #FFC107;
+                }
+                footer .text-warning{
+                    color: #FFC107;
+                }
+            </style>
+            <!-- FontAwesome 5 -->
+            <script src="https://kit.fontawesome.com/7dd8e90f71.js" crossorigin="anonymous"></script> 
+            <!-- Bootstrap 5 -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script> 
+            <!-- UIVERSE IO -->
+            <script src="https://uicdn.toast.com/tui.code-snippet/v1.5.0/tui-code-snippet.min.js"></script> 
+            <script src="https://uicdn.toast.com/gridjs/latest/gridjs.min.js"></script>
+            <link rel="stylesheet" href="https://uicdn.toast.com/gridjs/latest/gridjs.min.css" />
+</body>
+
+</html>

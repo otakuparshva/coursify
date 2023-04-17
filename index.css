@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&display=swap");
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format("woff2");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  list-style: none;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  /* Submenu styles */
+  /* Menu item styles */
+  /* Active menu item styles */
+  /* Disabled menu item styles */
+  /* Dropdown menu hover effect */
+  /* Dropdown submenu hover effect */
+  /* Dropeffect for dropdown menu and submenu */
+}
+.dropdown-menu .dropdown-submenu {
+  position: relative;
+}
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -0.125rem;
+  margin-left: 0.125rem;
+  min-width: 10rem;
+}
+.dropdown-menu .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: black;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-image: linear-gradient(280deg, blueviolet, cyan);
+  text-shadow: 1px 1px 1px #000000;
+  font-weight: bold;
+  color: white;
+}
+.dropdown-menu .dropdown-item.active {
+  color: black;
+  text-decoration: none;
+  background-color: #1b55e2;
+}
+.dropdown-menu .dropdown-item.disabled,
+.dropdown-menu .dropdown-item:disabled {
+  color: #6c757d;
+  background-color: transparent;
+}
+.dropdown-menu .dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  margin-left: 0;
+  margin-top: -1px;
+}
+.dropdown-menu [data-bs-toggle=dropdown]:not(.disabled):hover::before {
+  opacity: 0.5;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#preloader {
+  background: #fff url(pencil.gif) no-repeat center center;
+  background-size: 45%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar {
+  margin: 0;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+.navbar .nav-link {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+  color: black;
+  /* Active menu link styles */
+  /* Disabled menu link styles */
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #1b55e2;
+  background-color: #f8f9fa;
+  outline: none;
+}
+.navbar .nav-link.active, .navbar .nav-link:active {
+  color: white;
+  background-color: #1b55e2;
+}
+.navbar .nav-link.disabled, .navbar .nav-link:disabled {
+  color: #6c757d;
+  background-color: transparent;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border: 2px groove black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.card img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom, #f7f7f7, #fff);
+  color: #333;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+.jumbotron .container {
+  background-image: linear-gradient(250deg, blue, blueviolet, cyan);
+  border: 2px black groove;
+  padding-bottom: 2rem;
+}
+.jumbotron .container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.jumbotron .container p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#login-btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#login-btn:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+#login-btn:active {
+  transform: translateY(-1px);
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: all 0.2s ease;
+}
+
+h3 {
+  text-shadow: 2px 1px 1px #000000;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */

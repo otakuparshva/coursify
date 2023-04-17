@@ -1,0 +1,47 @@
+
+$fontcolor: black;
+$bgcolor: white;
+$padd : 0.5rem 1rem;
+.navbar {
+    margin: 0;
+    background-color: $bgcolor;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  
+  
+  .navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: $padd;
+  }
+  
+  .nav-link {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: $padd;
+    transition: 0.3s ease;
+    color : black;
+  
+  
+  &:hover,
+  &:focus {
+    color: #1b55e2;
+    background-color: #f8f9fa;
+    outline: none;
+  }
+  
+  /* Active menu link styles */
+  &.active,
+  &:active {
+    color: $bgcolor;
+    background-color: #1b55e2;
+  }
+  
+  /* Disabled menu link styles */
+  &.disabled,
+  &:disabled {
+    color: #6c757d;
+    background-color: transparent;
+  }
+  }
+  }
+  

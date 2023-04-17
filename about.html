@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>coursify</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-kjnCymoGrKkfs+E1AsnSc2eRo8l5iX1Kj5BOp/BsbP5lLZpKcPvBfAYYBz1SKM8y/SWzgUeJFlUbrz6IVqTJw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="noon.css">
+</head>
+
+<body>
+  <div>
+
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/Z5mU5zK5eM4" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+  <!-- this is preloader  -->
+  <div id="preloader"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="cou.png" height="120px" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- create dropdown in nav bar -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Development</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#webindex.html">Front-end Development</a></li>
+                  <li><a class="dropdown-item" href="#moblieindex.html">Mobile Development</a></li>
+                  <li><a class="dropdown-item" href="#softindex.html">Back-end Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">AI/ML</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#aiindex.html">Artifical intelligence</a></li>
+                  <li><a class="dropdown-item" href="#mlindex.html">Machine learning with python</a></li>
+                  <li><a class="dropdown-item" href="#dsindex.html">Data science using R</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">cs core</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#dbmsindex.html">database management System</a></li>
+                  <li><a class="dropdown-item" href="#osindex.html">Operating System</a></li>
+                  <li><a class="dropdown-item" href="#csaindex.html">computer System architecture</a></li>
+                 
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Dashboard</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="d-flex justify-content-end">
+        <a class="btn btn-outline-primary me-2" id="login-btn" href="login.html">Log In</a>
+
+      </div>
+
+
+
+
+    </div>
+  </nav>
+
+  <!-- Carousel Section -->
+  <section id="carousel-section" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Featured Courses</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://imageio.forbes.com/specials-images/dam/imageserve/1147545116/0x0.jpg?format=jpg&width=1200"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>marketing</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://visme.co/blog/wp-content/uploads/2021/10/what-is-graphic-design-header-1200.png"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>graphic Design</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--eER6Ks-M--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3gjbeg830gnu43sxz7et.png"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Development</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".carousel").carousel();
+    });
+  </script>
+
+  <!-- Create container div for dashboard content -->
+  <div class="container">
+    <h2>My Dashboard</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Enrolled Courses</h3>
+        <!-- Create list of enrolled courses using Bootstrap cards -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Course Name 1</h5>
+            <p class="card-text">Course Description 1</p>
+            <a href="index.html" class="btn btn-primary">View Course</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Course Name 2</h5>
+            <p class="card-text">Course Description 2</p>
+            <a href="index.html" class="btn btn-primary">View Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Account Information</h3>
+        <!-- Create form for updating account information -->
+        <form>
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="avatarInput">Profile Picture</label>
+            <input type="file" class="form-control-file" id="avatarInput" />
+          </div>
+          <button type="submit" href="index.html" class="btn btn-primary">
+            Save Changes
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    $(document).ready(function () {
+      // Activate the carousel
+      $("#myCarousel").carousel();
+
+      // Enable carousel controls
+      $(".carousel-control-prev").click(function () {
+        $("#myCarousel").carousel("prev");
+      });
+      $(".carousel-control-next").click(function () {
+        $("#myCarousel").carousel("next");
+      });
+
+      // Enable carousel indicators
+      $(".carousel-indicators li").click(function () {
+        var slideTo = $(this).attr("data-slide-to");
+        $("#myCarousel").carousel(parseInt(slideTo));
+      });
+    });
+    const loginBtn = document.getElementById("login-btn");
+    const loginFormContainer = document.getElementById(
+      "login-form-container"
+    );
+
+    loginBtn.addEventListener("click", () => {
+      loginFormContainer.style.display = "flex";
+    });
+
+    window.addEventListener("click", (event) => {
+      if (event.target == loginFormContainer) {
+        loginFormContainer.style.display = "none";
+      }
+    });
+    // Get the form element and its fields
+    const form = document.getElementById("login-form");
+    const emailField = document.getElementById("email");
+    const passwordField = document.getElementById("password");
+
+    // Add an event listener for when the form is submitted
+    form.addEventListener("submit", function (event) {
+      // Prevent the form from submitting by default
+      event.preventDefault();
+
+      // Validate the email field
+      const email = emailField.value.trim();
+      if (!email) {
+        showError(emailField, "Email is required");
+        return;
+      }
+      if (!isValidEmail(email)) {
+        showError(emailField, "Email is not valid");
+        return;
+      }
+
+      // Validate the password field
+      const password = passwordField.value.trim();
+      if (!password) {
+        showError(passwordField, "Password is required");
+        return;
+      }
+      if (password.length < 8) {
+        showError(passwordField, "Password must be at least 8 characters");
+        return;
+      }
+
+      // Submit the form if all fields are valid
+      form.submit();
+    });
+
+    // Function to show an error message for a field
+    function showError(field, message) {
+      const errorField = field.nextElementSibling;
+      errorField.innerText = message;
+      errorField.classList.add("visible");
+    }
+
+    // Function to check if an email is valid
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script>
+      <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About Us</h5>
+                    <p>
+                        Coursify is a leading online learning platform that offers free courses on various topics created by experts. Our mission is to help people make a career for their future without any cost.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Tools We Use</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">HTML5</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">CSS3</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">JavaScript</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Bootstrap5</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">UIVERSE IO</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Your Account</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Become an Affiliate</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Shipping Rates</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Help</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+                    <p><i class="fas fa-home mr-3"></i>Surat, Gujarat, India</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:meet.gupta.imscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">meet.gupta.imscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:parshva.shah.bscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">parshva.shah.bscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>Email: 
+                        <a href="mailto:karan.gandhi.bscit2022@aurouniversity.edu.in" class="text-white" style="text-decoration: none;">karan.gandhi.bscit2022@aurouniversity.edu.in</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>Phone: 
+                        <a href="tel:+917096830000" class="text-white" style="text-decoration: none;">7096830000/7486949488/9265263496</a>
+                    </p>
+                </div>
+            </div>
+        
+            <hr class="mb-4">
+        
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright &copy; 2023 All rights reserved
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">Coursify</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li> 
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </footer>
+            <style>
+                footer{
+                    background-color: #191919;
+                    color: #fff;
+                }
+                footer a{
+                    color: #fff;
+                }
+                footer a:hover{
+                    color: #FFC107;
+                }
+                footer hr{
+                    background-color: #ccc;
+                }
+                footer ul li a:hover{
+                    color: #FFC107;
+                }
+                footer .text-warning{
+                    color: #FFC107;
+                }
+            </style>
+            <!-- FontAwesome 5 -->
+            <script src="https://kit.fontawesome.com/7dd8e90f71.js" crossorigin="anonymous"></script> 
+            <!-- Bootstrap 5 -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script> 
+            <!-- UIVERSE IO -->
+            <script src="https://uicdn.toast.com/tui.code-snippet/v1.5.0/tui-code-snippet.min.js"></script> 
+            <script src="https://uicdn.toast.com/gridjs/latest/gridjs.min.js"></script>
+            <link rel="stylesheet" href="https://uicdn.toast.com/gridjs/latest/gridjs.min.css" />
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  height: 100vh;
+}
+
+/* background iamges :background.jpg
+https://wallpapercave.com/wp/wp3474509.jpg
+*/
+body {
+  width: 100%;
+  height: 120vh;
+  background: url("background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+header {
+  position: static;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.logo .image {
+  height: 80px;
+}
+
+header .navbar ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 40px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+
+.heading {
+  color: #333;
+  text-align: center;
+  display: grid;
+  z-index: 3;
+  position: relative;
+  top: 340px;
+}
+
+.heading h1 {
+  font-size: 6rem;
+  font-family: "Merriweather", serif;
+}
+
+.heading h3 {
+  font-size: 1.5rem;
+  font-family: "Cinzel", serif;
+}
+
+/*Login Button*/
+.login {
+  margin-top: 25px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.login:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.login:active {
+  transform: translateY(-1px);
+}
+
+.login a {
+  text-decoration: none;
+}
+
+/*explore button*/
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.15s ease;
+  width: 10rem;
+  left: 665px;
+  margin-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #000000; /*to change*/
+  transition: all 0.15s ease;
+}
+
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all 0.2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655; /*to change*/
+  transform: skew(-15deg);
+  transition: all 0.2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:hover {
+  color: #0f1923;
+}
+
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+  background-color: #fff;
+}
+
+/* card */
+.card {
+  width: 90vw;
+  height: 600px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  top: 5rem;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(13, 10, 10, 0.5); /*color of card*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  /* background: radial-gradient(#b0e633, #53ef7d); */
+  background: radial-gradient(#B76E79, gold);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+}
+
+.page2 {
+  background: url("https://image.freepik.com/free-photo/white-cloth-background-texture-grooved-white-fabric-abstract_3236-329.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/*inside card */
+.img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  bottom: 170px;
+  right: 100px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  bottom: 70%;
+  line-height: 2rem;
+}
+
+.content h2, p {
+  color: white;
+}
+
+.txt {
+  position: relative;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 3rem;
+  position: relative;
+  bottom: 720px; /*to change bottom of about coursify*/
+  left: 200px; /*to change left of about coursify*/
+  font-family: "Cinzel", serif;
+}
+
+.content p {
+  position: relative;
+  bottom: 680px;
+  width: 850px;
+  left: 450px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*contributions*/
+.contri {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin: 0;
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+  padding-top: 2rem;
+  letter-spacing: 5px;
+  font-family: "Lobster Two", cursive;
+  color: black;
+  font-weight: 500;
+}
+
+.page3 {
+  background: url("https://image.freepik.com/free-photo/white-cloth-background-texture-grooved-white-fabric-abstract_3236-329.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/*cards*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto; /*may cchange*/
+  margin: 0%;
+  font-family: "Cinzel", serif;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  z-index: 0;
+}
+
+.card_box1 {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box1:hover {
+  transform: scale(0.9);
+}
+
+.card_box1 span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box1 span::before {
+  content: "Parshva Shah";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box1 span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 5rem; /*may change*/
+  position: relative;
+  z-index: 0;
+}
+
+.card_box2 {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box2:hover {
+  transform: scale(0.9);
+}
+
+.card_box2 span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box2 span::before {
+  content: "Meet Gupta";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box2 span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  z-index: 0;
+}
+
+.card_box3 {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box3:hover {
+  transform: scale(0.9);
+}
+
+.card_box3 span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box3 span::before {
+  content: "Karan Gandhi";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box3 span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* page4 and footer */
+.page4 {
+  background: url("https://image.freepik.com/free-photo/white-cloth-background-texture-grooved-white-fabric-abstract_3236-329.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  max-height: 20vh;
+}/*# sourceMappingURL=aboutus.css.map */
