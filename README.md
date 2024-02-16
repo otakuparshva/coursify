@@ -8,5 +8,4 @@ Coursify is built with the following technologies:
 
 - HTML
 - CSS
-- JavaScript
 - Bootstrap
